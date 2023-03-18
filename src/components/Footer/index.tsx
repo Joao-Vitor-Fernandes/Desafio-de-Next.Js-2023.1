@@ -12,20 +12,24 @@ export function Footer() {
             as='footer'
             bg='#F9E6B3'
             justify={'space-between'}
-            height={'128px'}
+            height={['228px', '228px', '128px', '128px', '128px']}
             width={'100%'}
             pl={'21px'}
             pr={'21px'}
+            flexDirection={['column', 'column', 'row', 'row', 'row']}
         >
             <Stack
                 as='section'
+                flexDirection={'row'}
             >
                 <Text
                     as='p'
-                    fontSize={'30px'}
+                    fontSize={['22px', '22px', '18px', '24px', '30px']}
+                    textAlign={['center', 'center', 'initial', 'initial', 'initial']}
                     fontWeight={'700'}
                     color='#175EA8'
-                    lineHeight={'37px'}
+                    lineHeight={['6', '7', '8', '9', '9']}
+                    display={{base: 'none', sm: 'none', md: 'inline', lg: 'inline', xl: 'inline'}}
                 >
                     Um lugar onde você<br />
                     pode deixar seu bichinho<br />
@@ -34,7 +38,7 @@ export function Footer() {
             </Stack>
             <Stack
                 as='section'
-                pr={'120px'}
+                // pr={'120px'}
             >
                 <HStack
                     as='div'
@@ -55,7 +59,8 @@ export function Footer() {
             <Stack
                 as='section'
                 lineHeight={'20px'}
-                alignItems={'flex-end'}
+                alignItems={['center', 'center', 'flex-end', 'flex-end', 'flex-end']}
+                pb={['2', '2', '0', '0', '0']}
             >
                 <TextsFooter text={"Contato"} />
                 <TextsFooter text={"(31) 98867-2824"} />
