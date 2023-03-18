@@ -65,7 +65,13 @@ export function Footer() {
                 <TextsFooter text={"Contato"} />
                 <TextsFooter text={"(31) 98867-2824"} />
                 <TextsFooter text={"aumigoshop@gmail.com.br"} />
-                <TextsFooter text={"Rua José Lourenço Kelmer, UFJF"} />
+                <Text
+                    as='p'
+                    fontSize={['14px', '14px', '14px', '18px', '18px']}
+                    fontWeight={'700'}
+                >
+                    Rua José Lourenço Kelmer, UFJF
+                </Text>
             </Stack>
         </HStack>
     )

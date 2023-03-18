@@ -25,9 +25,7 @@ export default function Contato() {
                     Entre em contato conosco!<br />
                     Envie uma mensagem.
                 </Text>
-                <Box
-                    display={{ base: 'none', sm: 'none', md: 'inline', lg: 'inline', xl: 'inline' }}
-                >
+                <Box display={{ base: 'none', sm: 'none', md: 'inline', lg: 'inline', xl: 'inline' }}>
                     <Image className="item" src={catAndDog} alt="item" width={"324"} height={"347"} />
                 </Box>
                 <Text
@@ -58,7 +56,6 @@ export default function Contato() {
                 <Box 
                     bg='#175EA8' 
                     height={['588px', '618px', '628px', '648px', '648px']} 
-                    // width={['324px', '424px', '624px', '624px', '624px']} 
                     width={['100%', '424px', '624px', '624px', '624px']} 
                     borderRadius={'8px'} 
                     boxShadow='lg'

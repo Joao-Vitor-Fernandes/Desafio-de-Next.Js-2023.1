@@ -1,4 +1,4 @@
-import { Box, Button, HStack, Input, InputGroup, InputRightElement, Link, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Input, InputGroup, InputRightElement, Link, Stack, Text } from "@chakra-ui/react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { Router } from "next/router";
 import React from "react";
@@ -12,15 +12,14 @@ function PasswordInput() {
             <Input
                 size='lg' 
                 bg='white' 
-                width={'510px'}
-                // pr='4.5rem'
+                width={["90%", "340px", "510px", "510px", "510px"]}
                 type={show ? 'text' : 'password'}
                 placeholder='Senha'
             />
-            <InputRightElement width='10.5rem' pt={'2'}>
-            <Button h='1.75rem' size='md' onClick={handleClick}>
-                {show ? <ViewOffIcon /> : <ViewIcon />}
-            </Button>
+            <InputRightElement width='10.5rem' pt={'2'} pl={['8', '0', '0', '0', '0']}>
+                <Button h='1.75rem' size='md' onClick={handleClick}>
+                    {show ? <ViewOffIcon /> : <ViewIcon />}
+                </Button>
             </InputRightElement>
         </InputGroup>
     )
@@ -41,13 +40,21 @@ export default function Login() {
                 position="absolute"
                 bottom="32"
                 left="0"
+                display={{ base: 'none', sm: 'none', md: 'inline', lg: 'inline', xl: 'inline' }}
             />
             <Stack
                 as='section'
                 py={'70px'}
                 alignItems={'center'}
             >
-                <Box bg='#175EA8' height='605px' width='605px' borderRadius={'8px'} boxShadow={'4px 4px 4px rgba(0, 0, 0, 0.3)'} zIndex="1">
+                <Box 
+                    bg='#175EA8' 
+                    height={['595px', '585px', '605px', '605px', '605px']} 
+                    width={['90%', '405px', '605px', '605px', '605px']} 
+                    borderRadius={'8px'} 
+                    boxShadow={'4px 4px 4px rgba(0, 0, 0, 0.3)'} 
+                    zIndex="1"
+                >
                     <Stack
                         as='section'
                         py={'28px'}
@@ -55,7 +62,7 @@ export default function Login() {
                     >
                         <Text
                             as='p'
-                            fontSize={'40px'}
+                            fontSize={['30px', '34px', '40px', '40px', '40px']}
                             fontWeight={'700'}
                             color='white'
                             textAlign={'center'}
@@ -67,7 +74,7 @@ export default function Login() {
                     <Stack
                         as='section'
                         pt={'6'}
-                        pl={'12'}
+                        pl={['6', '8', '12', '12', '12']}
                     >
                         <Text
                             as='p'
@@ -77,12 +84,12 @@ export default function Login() {
                         >
                             Email:
                         </Text>
-                        <Input placeholder='' size='lg' bg='white' width={'510px'} />
+                        <Input placeholder='' size='lg' bg='white' width={['90%', '340px', '510px', '510px', '510px']} />
                     </Stack>
                     <Stack
                         as='section'
                         pt={'12'}
-                        pl={'12'}
+                        pl={['6', '8', '12', '12', '12']}
                         pb={'10'}
                         borderBottom={'1px solid white'}
                     >
@@ -99,9 +106,10 @@ export default function Login() {
                     <HStack
                         as='section'
                         justifyContent={'space-around'}
+                        flexDirection={['column', 'row', 'row', 'row', 'row']}
                         pt={'7'}
                     >
-                        <Button colorScheme='whiteAlpha' color='white' variant='link' size='lg'>
+                        <Button colorScheme='whiteAlpha' color='white' variant='link' size='lg' pb={['4', '0', '0', '0', '0']}>
                             Esqueceu sua senha?
                         </Button>
                         <Link href='/admin' pt={'1'} borderRadius={'8px'} bg='#A97C73' size='lg' height='50px' width='145px'
@@ -130,6 +138,7 @@ export default function Login() {
                 position="absolute"
                 top="28"
                 right="0"
+                display={{ base: 'none', sm: 'none', md: 'inline', lg: 'inline', xl: 'inline' }}
             />
         </Stack>
     )
