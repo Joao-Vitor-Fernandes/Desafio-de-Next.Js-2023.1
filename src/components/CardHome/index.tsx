@@ -11,7 +11,7 @@ import item6 from "../../../public/card6.png";
 export function CardHome(){
     return(
         <>
-            <SimpleGrid columns={[2, null, 3]} spacing='160px' spacingY='40px'>
+            <SimpleGrid columns={[1, 2, 2, 3, 3]} spacing={['120px', '120px', '160px', '160px', '160px']} spacingY='40px'>
                 <Box bg='#175EA8' height='230px' width='175px' borderRadius={'8px'} boxShadow='lg' zIndex="1">
                     <Stack as='section' alignItems={'center'} py={'14px'}>
                         <Image className="item" src={item1} alt="item" width={"150"} height={"150"} />

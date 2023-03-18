@@ -24,7 +24,7 @@ export default function Home() {
       >
         <Text
           as='p'
-          fontSize={'30px'}
+          fontSize={['20px', '24px', '30px', '30px', '30px']}
           fontWeight={'700'}
           pb={'36px'}
           textAlign={'center'}
@@ -34,7 +34,7 @@ export default function Home() {
         </Text>
         <Text
           as='p'
-          fontSize={'30px'}
+          fontSize={['20px', '24px', '30px', '30px', '30px']}
           fontWeight={'700'}
           pt={'0px'}
           pb={'36px'}

@@ -78,7 +78,7 @@ export function Navbar() {
                     margin={'0'}
                     h={'12'}
                     border={'2px solid #e8ce87'}
-                    onMouseUp={handleMouseUp}
+                    // onMouseUp={handleMouseUp}
                 >
                     {iconAtual}
                 </MenuButton>
