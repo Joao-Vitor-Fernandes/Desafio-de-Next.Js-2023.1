@@ -10,6 +10,8 @@ import item6 from "../../public/card6.png";
 import cachorroGato from "../../public/cachorro e gato.png";
 import cachorroPatinha from "../../public/cachorroPatinha.png";
 
+import { CardHome } from "../components/CardHome";
+
 export default function Home() {
   return (
     <Stack
@@ -25,6 +27,8 @@ export default function Home() {
           fontSize={'30px'}
           fontWeight={'700'}
           pb={'36px'}
+          textAlign={'center'}
+          zIndex={1}
         >
           Seja bem-vindo ao nosso site de Pet Shop!
         </Text>
@@ -35,6 +39,7 @@ export default function Home() {
           pt={'0px'}
           pb={'36px'}
           textAlign={'center'}
+          zIndex={1}
         >
           Aqui você encontrará tudo o que precisa para<br />
           cuidar bem do seu animal de estimação.
@@ -50,62 +55,14 @@ export default function Home() {
         position="absolute"
         bottom="60"
         left="0"
+        display={{ base: 'none', sm: 'inline', md: 'inline', lg: 'inline', xl: 'inline' }}
       />
       <Stack
         as='section'
         alignItems={'center'}
         pb={'44px'}
       >
-        <SimpleGrid columns={[2, null, 3]} spacing='160px' spacingY='40px'>
-          <Box bg='#175EA8' height='230px' width='175px' borderRadius={'8px'} boxShadow='lg' zIndex="1">
-            <Stack as='section' alignItems={'center'} py={'14px'}>
-              <Image className="item" src={item1} alt="item" width={"150"} height={"150"} />
-              <Text as='p' fontSize={'30px'} fontWeight={'700'} color='white'>
-                R$ 39,90
-              </Text>
-            </Stack>
-          </Box>
-          <Box bg='#175EA8' height='230px' width='175px' borderRadius={'8px'} boxShadow='lg' zIndex="1">
-            <Stack as='section' alignItems={'center'} py={'14px'}>
-              <Image className="item" src={item2} alt="item" width={"150"} height={"150"} />
-              <Text as='p' fontSize={'30px'} fontWeight={'700'} color='white'>
-                R$ 24,99
-              </Text>
-            </Stack>
-          </Box>
-          <Box bg='#175EA8' height='230px' width='175px' borderRadius={'8px'} boxShadow='lg' zIndex="1">
-            <Stack as='section' alignItems={'center'} py={'14px'}>
-              <Image className="item" src={item3} alt="item" width={"150"} height={"150"} />
-              <Text as='p' fontSize={'30px'} fontWeight={'700'} color='white'>
-                R$ 74,90
-              </Text>
-            </Stack>
-          </Box>
-          <Box bg='#175EA8' height='230px' width='175px' borderRadius={'8px'} boxShadow='lg' zIndex="1">
-            <Stack as='section' alignItems={'center'} py={'14px'}>
-              <Image className="item" src={item4} alt="item" width={"150"} height={"150"} />
-              <Text as='p' fontSize={'30px'} fontWeight={'700'} color='white'>
-                R$ 14,99
-              </Text>
-            </Stack>
-          </Box>
-          <Box bg='#175EA8' height='230px' width='175px' borderRadius={'8px'} boxShadow='lg' zIndex="1">
-            <Stack as='section' alignItems={'center'} py={'14px'}>
-              <Image className="item" src={item5} alt="item" width={"150"} height={"150"} />
-              <Text as='p' fontSize={'30px'} fontWeight={'700'} color='white'>
-                R$ 64,90
-              </Text>
-            </Stack>
-          </Box>
-          <Box bg='#175EA8' height='230px' width='175px' borderRadius={'8px'} boxShadow='lg' zIndex="1">
-            <Stack as='section' alignItems={'center'} py={'14px'}>
-              <Image className="item" src={item6} alt="item" width={"150"} height={"150"} />
-              <Text as='p' fontSize={'30px'} fontWeight={'700'} color='white'>
-                R$ 19,99
-              </Text>
-            </Stack>
-          </Box>
-        </SimpleGrid>
+        <CardHome />
       </Stack>
       <Box
         pt={'200px'}
@@ -117,6 +74,7 @@ export default function Home() {
         position="absolute"
         bottom="86px"
         right="4"
+        display={{ base: 'none', sm: 'none', md: 'inline', lg: 'inline', xl: 'inline' }}
       />
     </Stack>
   )

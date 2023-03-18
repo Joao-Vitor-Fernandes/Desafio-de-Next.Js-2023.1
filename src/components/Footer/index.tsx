@@ -12,11 +12,11 @@ export function Footer() {
             as='footer'
             bg='#F9E6B3'
             justify={'space-between'}
-            height={['228px', '228px', '128px', '128px', '128px']}
+            height={['228px', '128px', '128px', '128px', '128px']}
             width={'100%'}
             pl={'21px'}
             pr={'21px'}
-            flexDirection={['column', 'column', 'row', 'row', 'row']}
+            flexDirection={['column', 'row', 'row', 'row', 'row']}
         >
             <Stack
                 as='section'
@@ -38,7 +38,6 @@ export function Footer() {
             </Stack>
             <Stack
                 as='section'
-                // pr={'120px'}
             >
                 <HStack
                     as='div'
@@ -60,7 +59,8 @@ export function Footer() {
                 as='section'
                 lineHeight={'20px'}
                 alignItems={['center', 'center', 'flex-end', 'flex-end', 'flex-end']}
-                pb={['2', '2', '0', '0', '0']}
+                py={['2', '2', '0', '0', '0']}
+                pr={['0', '8', '0', '0', '0']}
             >
                 <TextsFooter text={"Contato"} />
                 <TextsFooter text={"(31) 98867-2824"} />
