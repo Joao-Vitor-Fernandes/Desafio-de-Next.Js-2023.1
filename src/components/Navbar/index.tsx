@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import logo from "../../../public/img-logo.png";
 import { TextsNav } from "../TextsNav";
+import { Button, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 
 // responsividade:
 //     base     sm      md      lg      xl
@@ -70,6 +71,43 @@ export function Navbar() {
                 }}
                 onClick={() => mudarDisplay('flex')}
             />
+
+            <Menu>
+                <MenuButton 
+                    as={Button} 
+                    bg='#fadf98' 
+                    colorScheme={'none'} 
+                    size={'md'} 
+                    display={['flex', 'flex', 'flex', 'none', 'none']}
+                    _active={{
+                        bg: '#e8ce87',
+                        transform: 'scale(0.98)',
+                        borderColor: '#e8ce87',
+                    }}
+                    margin={'0'}
+                    h={'12'}
+                    border={'2px solid #e8ce87'}
+                >
+                    <HamburgerIcon color={'black'}/>
+                </MenuButton>
+                <MenuList zIndex={20}>
+                    <MenuItem>
+                        <Link href={"/sobre"}>
+                            <TextsNav text={"Sobre Nós"} />
+                        </Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link href={"/contato"}>
+                            <TextsNav text={"Contato"} />
+                        </Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link href={"/login"}>
+                            <TextsNav text={"Login"} />
+                        </Link>
+                    </MenuItem>
+                </MenuList>
+            </Menu>
 
             <Flex
                 // w={'100vw'}
