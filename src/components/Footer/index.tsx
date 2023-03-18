@@ -12,7 +12,7 @@ export function Footer() {
             as='footer'
             bg='#F9E6B3'
             justify={'space-between'}
-            height={['228px', '128px', '128px', '128px', '128px']}
+            height={['228px', '148px', '128px', '128px', '128px']}
             width={'100%'}
             pl={'21px'}
             pr={'21px'}

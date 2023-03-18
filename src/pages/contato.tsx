@@ -1,33 +1,38 @@
-import { Inputs } from "@/components/Input";
-import { Box, Button, HStack, Input, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, HStack, Input, Stack, Text, Textarea } from "@chakra-ui/react";
 import Image from "next/image";
 
+import { Inputs } from "@/components/Input";
 import catAndDog from "../../public/cat and dog contact.png";
 
 export default function Contato() {
     return(
         <HStack
             as='main'
+            flexDirection={['column', 'column', 'column', 'column', 'row']}
         >
             <Stack
                 as='section'
-                py={'108px'}
-                pl={'121px'}
+                py={['48px', '48px', '68px', '68px', '108px']}
+                pl={['0', '0', '0', '0', '121px']}
                 alignItems={'center'}
             >
                 <Text
                     as='p'
-                    fontSize={'30px'}
+                    fontSize={['24px', '30px', '30px', '30px', '30px']}
                     fontWeight={'700'}
                     textAlign={'center'}
                 >
                     Entre em contato conosco!<br />
                     Envie uma mensagem.
                 </Text>
-                <Image className="item" src={catAndDog} alt="item" width={"324"} height={"347"} />
+                <Box
+                    display={{ base: 'none', sm: 'none', md: 'inline', lg: 'inline', xl: 'inline' }}
+                >
+                    <Image className="item" src={catAndDog} alt="item" width={"324"} height={"347"} />
+                </Box>
                 <Text
                     as='p'
-                    fontSize={'30px'}
+                    fontSize={['24px', '30px', '30px', '30px', '30px']}
                     fontWeight={'700'}
                     textAlign={'center'}
                 >
@@ -35,7 +40,7 @@ export default function Contato() {
                 </Text>
                 <Text
                     as='p'
-                    fontSize={'22px'}
+                    fontSize={['18px', '22px', '22px', '22px', '22px']}
                     fontWeight={'700'}
                     textAlign={'center'}
                 >
@@ -46,12 +51,21 @@ export default function Contato() {
             <Stack
                 as='section'
                 alignItems={'center'}
-                pl={'196px'}
+                pl={['0', '0', '0', '0', '196px']}
+                pr={['0', '0', '0', '0', '8']}
+                pb={['48px', '48px', '68px', '68px', '0']}
             >
-                <Box bg='#175EA8' height='648px' width='624px' borderRadius={'8px'} boxShadow='lg'>
+                <Box 
+                    bg='#175EA8' 
+                    height={['588px', '618px', '628px', '648px', '648px']} 
+                    // width={['324px', '424px', '624px', '624px', '624px']} 
+                    width={['100%', '424px', '624px', '624px', '624px']} 
+                    borderRadius={'8px'} 
+                    boxShadow='lg'
+                >
                     <Stack
                         as='section'
-                        pl={'5'}
+                        pl={['3', '5', '5', '5', '5']}
                         pt={'2'}
                     >
                         <Inputs nome={"Nome:"} />
@@ -60,13 +74,20 @@ export default function Contato() {
                         <Inputs nome={"Assunto:"} />
                         <Text
                             as='p'
-                            fontSize={'28px'}
+                            fontSize={['20px', '24px', '26px', '28px', '28px']}
                             fontWeight={'700'}
                             color='white'
                         >
                             Mensagem:
                         </Text>
-                        <Input placeholder='' size='md' bg='white' width={'584px'} pb={'90px'} pt={'20px'} />
+                        <Textarea
+                            bg='white' 
+                            width={['95%', '95%', '95%', '95%', '584px']} 
+                            pb={'90px'} 
+                            pt={'20px'} 
+                            overflowY="hidden" 
+                            resize={'none'}
+                        />
                         <Stack
                             pt={'3'}
                             alignItems={'center'}
