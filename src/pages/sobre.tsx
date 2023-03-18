@@ -37,7 +37,7 @@ export default function Sobre() {
             >
                 <Text
                     as='p'
-                    fontSize={'40px'}
+                    fontSize={['30px', '34px', '40px', '40px', '40px']}
                     fontWeight={'700'}
                     color='#175EA8'
                     textAlign={'center'}
@@ -46,7 +46,7 @@ export default function Sobre() {
                 </Text>
                 <Text
                     as='p'
-                    fontSize={'30px'}
+                    fontSize={['20px', '24px', '30px', '30px', '30px']}
                     fontWeight={'700'}
                     textAlign={'center'}
                 >
@@ -58,7 +58,7 @@ export default function Sobre() {
                 alignItems={'center'}
                 py={'12'}
             >
-                <SimpleGrid columns={[2, null, 3]} spacing='40px'>
+                <SimpleGrid columns={[1, 1, 1, 2, 3]} spacing='40px'>
                     {membros.map((membro) => 
                         <CardSobre key={membro.id} nome={membro.name} email={membro.email} cargo={membro.cargo} aniversario={membro.aniversario} />)
                     }

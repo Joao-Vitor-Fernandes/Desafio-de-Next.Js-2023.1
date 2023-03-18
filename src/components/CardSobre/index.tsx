@@ -9,7 +9,12 @@ interface TextProps{
 
 export function CardSobre({ nome, email, cargo, aniversario }: TextProps) {
     return(
-        <Box bg='#175EA8' width={'445px'} height={'155px'} borderRadius={'10px'}>
+        <Box 
+            bg='#175EA8' 
+            width={['100%', '100%', '100%', '100%', '445px']} 
+            height={['205px', '155px', '155px', '155px', '155px']} 
+            borderRadius={'10px'}
+        >
             <Stack
                 as='section'
                 pt={'1'}
@@ -18,7 +23,7 @@ export function CardSobre({ nome, email, cargo, aniversario }: TextProps) {
             >
                 <Text
                     as='p'
-                    fontSize={'22px'}
+                    fontSize={['16px', '18px', '22px', '22px', '22px']}
                     fontWeight={'700'}
                     color='white'
                 >
@@ -32,10 +37,12 @@ export function CardSobre({ nome, email, cargo, aniversario }: TextProps) {
                 <HStack
                     as='section'
                     lineHeight={'6'}
+                    flexDirection={['column', 'row', 'row', 'row', 'row']}
+                    alignItems={'flex-start'}
                 >
                     <Text
                         as='p'
-                        fontSize={'22px'}
+                        fontSize={['16px', '18px', '22px', '22px', '22px']}
                         fontWeight={'700'}
                         color='#F9E6B3'
                         pl={'2'}
@@ -44,7 +51,7 @@ export function CardSobre({ nome, email, cargo, aniversario }: TextProps) {
                     </Text>
                     <Text
                         as='p'
-                        fontSize={'22px'}
+                        fontSize={['16px', '18px', '22px', '22px', '22px']}
                         fontWeight={'600'}
                         color='white'
                     >
@@ -54,10 +61,12 @@ export function CardSobre({ nome, email, cargo, aniversario }: TextProps) {
                 <HStack
                     as='section'
                     lineHeight={'6'}
+                    flexDirection={['column', 'row', 'row', 'row', 'row']}
+                    alignItems={'flex-start'}
                 >
                     <Text
                         as='p'
-                        fontSize={'22px'}
+                        fontSize={['16px', '18px', '22px', '22px', '22px']}
                         fontWeight={'700'}
                         color='#F9E6B3'
                         pl={'2'}
@@ -66,7 +75,7 @@ export function CardSobre({ nome, email, cargo, aniversario }: TextProps) {
                     </Text>
                     <Text
                         as='p'
-                        fontSize={'22px'}
+                        fontSize={['16px', '18px', '22px', '22px', '22px']}
                         fontWeight={'600'}
                         color='white'
                     >
@@ -76,10 +85,12 @@ export function CardSobre({ nome, email, cargo, aniversario }: TextProps) {
                 <HStack
                     as='section'
                     lineHeight={'6'}
+                    flexDirection={['column', 'row', 'row', 'row', 'row']}
+                    alignItems={'flex-start'}
                 >
                     <Text
                         as='p'
-                        fontSize={'22px'}
+                        fontSize={['16px', '18px', '22px', '22px', '22px']}
                         fontWeight={'700'}
                         color='#F9E6B3'
                         pl={'2'}
@@ -88,7 +99,7 @@ export function CardSobre({ nome, email, cargo, aniversario }: TextProps) {
                     </Text>
                     <Text
                         as='p'
-                        fontSize={'22px'}
+                        fontSize={['16px', '18px', '22px', '22px', '22px']}
                         fontWeight={'600'}
                         color='white'
                     >
