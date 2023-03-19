@@ -4,7 +4,6 @@ import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody,
 import { useEffect, useState } from "react";
 import axios, { AxiosResponse } from "axios";
 
-import { TableLine } from "@/components/TableLine";
 import { TableAdmin } from "@/components/Table";
 
 type Membro = {
@@ -72,7 +71,7 @@ export default function Admin() {
                 as='main'
                 pt={'42px'}
                 pb={'75px'}
-                px={'112px'}
+                px={['22px', '42px', '62px', '82px', '112px']}
             >
                 <Stack
                     as='section'
